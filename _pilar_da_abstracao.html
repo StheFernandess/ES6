@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //modelo objeto
+        class ContaBancaria {
+            //agencia
+            //numeroConta
+            //saldo
+            //limite
+            constructor() { 
+            //instruções q seram realizadas
+                this.agencia = 1075 
+                //conecta atributo ao objeto
+                this.numeroConta = 835125
+                this.saldo = 50
+                this.limite = 100
+            }     
+            
+            depositar(valorDeposito) {
+                this.saldo += valorDeposito
+            }
+            sacar(valorSaque) {
+                this.saldo -= valorSaque
+            }
+            consultarSaldo() {
+                return this.saldo
+            }          
+        }
+
+        let x = new ContaBancaria()
+        let y = new ContaBancaria()
+        //new indica o modelo a ser transformado em objeto
+
+        console.log(x.consultarSaldo())
+        //pra depositar
+        x.depositar(451)
+        console.log(x.consultarSaldo())
+        //pra sacar
+        x.sacar(45)
+        console.log(x.consultarSaldo())
+        // o ponto "." permite o acesso atributos ou metodo do objeto
+
+        console.log(y.consultarSaldo())
+
+
+
+
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>

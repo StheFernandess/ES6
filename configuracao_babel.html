@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+/*
+        var serie = 'Friends'
+
+        function x() {
+            var serie = 'Game of Thrones'
+            console.log('função' + serie)
+
+            if(true) {
+                console.log('bloco dentro da função:' + serie)
+            }
+        }
+
+        x()
+        if (true) {
+            console.log('global:' + serie)
+        }
+
+*/
+
+    function x() {
+
+        if(true) {
+            let serie = 'Wallking Dead'
+            //let a variavel permanece somente dentro do escopo, 
+            //a var dentro do escopo de bloco sobe de nivel e sobreescreve o var global
+            //const define valores q não vão ser alterados dps
+        }
+    }
+
+    x()
+
+    if (true) {
+
+        x()
+        console.log(serie)
+    }
+    console.log(serie)
+
+
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>

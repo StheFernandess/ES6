@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let nome = 'Sthe'
+        let idade = 33
+        let sexo = 'feminino'
+        let profissao = 'Programadora'
+
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function() {
+                console.log(`${this.nome}, ${this.idade} anos, é ${this.profissao}`)
+            }
+        }
+
+        console.log(objeto)
+        objeto.exibirResumo()
+
+
+    //melhorias
+        let objeto2 = {
+            nome,
+            idade,
+            sexo,
+            profissao,
+            exibirResumo() {
+                console.log(`${this.nome}, ${this.idade} anos, é ${this.profissao}`)
+            }
+        }
+        console.log(objeto2)
+        objeto2.exibirResumo()
+
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+       let produto = {
+        descricao: 'Notebook',
+        preco: 1800,
+        detalhes: {
+            fabricante: 'zol',
+            modelo: 'x'
+        } 
+       }
+
+    //array => []
+    //objeto => {}
+    
+    //let{ descricao: d, preco: p, desconto = 5 } = produto
+
+    let{ detalhes: {fabricante, modelo }} = produto
+
+    console.log(fabricante, modelo)
+
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>

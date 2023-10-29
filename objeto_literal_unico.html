@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        let assinatura = {
+            idCliente: 100,
+            descricao: 'Acesso a internet',
+            status(){
+                console.log('Ativo')
+            }
+        }
+
+        console.log(assinatura.descricao)
+
+        ////variavel y agora aponta para o msm lugar da assinatura
+        let y = assinatura
+
+        console.log(y.descricao)
+
+/////////////////////////////////////////
+
+        y.descricao = 'Internet + telefone'
+
+        console.log(assinatura.descricao)
+        console.log(y.descricao)
+
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>
